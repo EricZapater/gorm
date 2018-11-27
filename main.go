@@ -2,14 +2,11 @@ package main
 
 import (
 	"github.com/jinzhu/gorm"
-)
-
-import (
-	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
 )
 
 type Product struct {
+	/* Product Model */
 	gorm.Model
 	Code  string
 	Price uint
